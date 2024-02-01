@@ -1,0 +1,446 @@
+  @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;700&family=Poppins:wght@300;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Colors */
+    --base-color-White: rgb(250, 250, 250, 1);
+    --base-color-Black: rgb( 23, 20, 18, 1);
+    --base-color-BlackLight: rgb(48, 48, 48, 1);
+    --base-color-Blue: rgb(152, 193, 217, 1);
+
+}
+
+html{
+    font-family: Poppins;
+    font-weight: 300;
+}
+
+body{
+    background-color: var(--base-color-Black);
+    color: var(--base-color-White);
+    align-items: center;
+	height: 100vh;
+	justify-content: center;
+   
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--base-color-White);
+    font-family: Expletus Sans;
+}
+
+section > svg {
+    width: 12rem;
+    height: auto;
+    fill: red;
+}
+
+.nav{
+    max-width: 100%;
+    margin: auto;
+    padding: 1.5rem 10rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(23, 20, 18, 0.5);
+    backdrop-filter: blur(50px);
+    box-shadow: 3px 3px 3px 1px rgba(23, 20, 18, 0.3);
+    z-index: 1;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.bt-nav {
+    padding: 0.5rem 1rem;
+    font-family: Expletus Sans;
+    color: var(--base-color-White);
+    border: 1px solid var(--base-color-White);
+    border-radius: 4px;
+    background-color: rgba(23, 20, 18, 0.5);
+    transition: background-color 0.4s;
+    display: flex;
+    align-items: center;
+
+    height: 2.5rem;
+ 
+}
+
+.bt-nav img svg {
+    fill: red;
+}
+    
+
+.bt-nav:hover {
+    padding: 0.5rem 1rem;
+    font-family: Expletus Sans;
+    font-weight: 400;
+    color: var(--base-color-Black);
+
+    background-color: var(--base-color-Blue);
+    border: 1px solid var(--base-color-Blue);
+    
+}
+
+button img {
+    width: 1rem;
+    height: auto;
+    color: white;
+    margin-right: 0.6rem;
+}
+
+main {
+    color: var(--base-color-White);
+    padding-top: 10rem;
+}
+
+.ux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ux p {
+    color: var(--base-color-Blue);
+}
+
+.text-sub p {
+    width: 1120px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.2rem;
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--base-color-White);
+}
+
+.text-sub {
+    margin-bottom: 10rem;
+}
+
+.text-sub p {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-ux {
+    color: var(--base-color-White);
+    margin-top: 8rem;
+    display: flex;
+    gap: 6rem;
+    font-size: 40px;
+    font-family: Expletus Sans;
+}
+
+.celebro {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 30rem;
+    height: auto;
+
+}
+
+@keyframes slider {
+	from { 
+        transform: translateX(0); 
+    }
+	to { 
+        transform: translateX(-100%);
+    }
+}
+
+.slider {
+	background: var(--base-color-BlackLight);
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 90px;
+	overflow:hidden;
+	position: relative;
+	width: auto;
+
+    display: flex;
+
+}
+
+.carrosel {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 10px 20px -5px var(--base-color-Black);
+
+    transform: rotate(-3.65deg);
+    transform: translate(0, 100%);
+
+}
+
+
+.slide-track {
+    display: flex;
+    flex-direction: row;
+    animation: 20s slider infinite linear;
+
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    gap: 2rem;
+
+}
+
+.slide p {
+    font-size: 24px;
+    font-family: Expletus Sans;
+    text-transform: uppercase;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 15rem;
+    text-align: center;
+}
+
+.slide img {
+    height: 20px;
+    width: auto;
+
+    margin-top: 2.5rem;
+}
+
+.sou-eu {
+    background: var(--base-color-White);
+    
+}
+
+.content {
+    max-width: 100%;
+    margin: auto;
+    padding: 15rem 10rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.content-text {
+    color: var(--base-color-Black);
+    max-width: 50%;
+}
+
+.text-soueu {
+    font-family: Poppins;
+    text-transform: uppercase;
+    color: var(--base-color-BlackLight);
+    font-size: 1rem;
+    font-weight: 800;
+
+    transform: translate(0, 60%);
+}
+
+.eric {
+    font-size: 5.4rem;
+    font-weight: 800;
+    color: var(--base-color-BlackLight);
+
+    font-family: Expletus Sans;
+
+}
+
+.ux-ui {
+    font-size: 1.5rem;
+    font-family: Poppins;
+    font-weight: 600;
+
+    text-align: right;
+    margin-right: 7rem;
+    color: var(--base-color-Blue);
+    text-transform: uppercase;
+    transform: translate(0, -50%);
+}
+
+.content-par {
+    font-size: 1.2rem;
+    font-family: Poppins;
+    font-weight: 300;
+
+}
+
+.content-foto {
+    max-width: 50%;
+
+    height: 2px;
+    width: auto;
+}
+
+.content-img {
+    width: 30rem;
+    height: auto;
+    
+    align-items: right;
+    margin-left: 4rem;
+
+}
+
+
+.curriculo img {
+    height: 1rem;
+    width: auto;
+}
+
+.bt-curriculo {
+    padding: 0.5rem 2rem;
+    font-family: Expletus Sans;
+    color: var(--base-color-White);
+    border-radius: 4px;
+    background-color: var(--base-color-Blue);
+    transition: background-color 0.4s;
+    display: flex;
+    align-items: center;
+
+    height: 2.5rem;
+    margin-top: 1rem;
+    border-color: var(--base-color-Blue);
+    box-shadow: 3px 3px 3px 1px var(--base-color-Blue);
+
+}
+
+.portifolio {
+    width: 100%;
+    background-color: var(--base-color-White);
+
+    padding-top: 10rem;
+}
+
+.content-port {
+    max-width: 1120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-port {
+    font-family: Expletus Sans;
+    font-size: 5rem;
+    color: var(--base-color-BlackLight);
+
+    transform: rotate(270deg);
+
+}
+
+.trabalhos-port {
+
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url(Assets/UX|UI\ Designer.jpeg)
+}
+.card[for="c2"] {
+    background-image: url(Assets/Front-end.jpeg);
+}
+.card[for="c3"] {
+    background-image: url(Assets/Designer-grafico.jpeg);
+}
