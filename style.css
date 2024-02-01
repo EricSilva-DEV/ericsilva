@@ -89,10 +89,7 @@ section > svg {
  
 }
 
-.bt-nav img svg {
-    fill: red;
-}
-    
+
 
 .bt-nav:hover {
     padding: 0.5rem 1rem;
@@ -380,7 +377,7 @@ main {
     display: flex;
     align-items: flex-end;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    box-shadow: 0px 5px 20px -5px var(--base-color-BlackLight);
 }
 
 .card > .row {
@@ -390,8 +387,10 @@ main {
 }
 
 .card > .row > .icon {
-    background: #223;
-    color: white;
+    background: var(--base-color-White);
+    color: var(--base-color-BlackLight);
+    font-family: Expletus Sans;
+    font-weight: 800;
     border-radius: 50%;
     width: 50px;
     display: flex;
@@ -411,6 +410,10 @@ main {
     transform: translateY(30px);
     transition-delay: .3s;
     transition: all .3s ease;
+
+    font-family: Poppins;
+    font-weight: 300;
+    color: var(--base-color-White);
 }
 
 .description p {
